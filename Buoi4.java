@@ -54,10 +54,16 @@ public class Buoi4 {
             if (i % 2 != 0) {
                 System.out.print("\t" + i);
             }
-
         }
-
     }
+    public static void bai4_4NC(int n) {
+        System.out.printf("\nDanh sách các giá trị chẵn nhỏ hơn hoặc bằng n = %d là: ", n);
+        for (int i = 2; i <= n; i += 2) {
+            System.out.print("\t" + i);
+        }
+        System.out.println();
+    }
+    
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -70,5 +76,6 @@ public class Buoi4 {
         num = sc.nextInt();
         bai4_2NC(num);
         bai4_3NC(num);
+        bai4_4NC(num);
     }
 }
