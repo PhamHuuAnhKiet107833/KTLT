@@ -1,26 +1,28 @@
-package it24a;
+package buoi3;
 
-public class Buoi3 {
+public class Kiet107833 {
+    public static String gioiTinh(boolean gt) {
+        return gt ? "Nam" : "Nữ";
+    }
+
     public static void main(String[] args) {
-        int[][][] c = {
-                {
-                        { 5, 2, 3 },
-                        { 4, 5, 6, 8 },
-                        { 7, 7 },
-                },
-                {
-                        { 5, 6, 7, 3 },
-                        { 8, 9 }
-                }
-        };
-        for (int i = 0; i < c.length; i++) {
-            for (int j = 0; j < c[i].length; j++) {
-                for (int k = 0; k < c[i][j].length; k++) {
-                    System.out.println(c[i][j][k] + " ");
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
+        System.out.println("---Thông tin sinh viên---");
+        String A = "107833";
+        String B = "Phạm Hữu Anh Kiệt";
+        String C = "23/08/2006";
+        int D = 18;
+        boolean gt = true;
+        String E = "IT24A";
+        String F = "Công nghệ thông tin";
+        String G = "Đà Nẵng";
+        System.out.println("Mã sinh viên: " + A);
+        System.out.println("Họ và tên:" + B);
+        System.out.println("Ngày sinh: " + C);
+        System.out.println("Tuổi: " + D);
+        System.out.println("Giới tính: " + gioiTinh(gt));
+        System.out.println("Lớp: " + E);
+        System.out.println("Khoa: " + F);
+        System.out.println("Địa chỉ: " + G);
+        System.out.println("--Hết--");
     }
 }
